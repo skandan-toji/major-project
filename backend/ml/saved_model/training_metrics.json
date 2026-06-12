@@ -1,0 +1,27 @@
+{
+    "total_samples": 31721,
+    "normal_samples": 21927,
+    "attack_samples": 9794,
+    "accuracy": 0.978254018279231,
+    "detection_rate": 0.9959183673469387,
+    "false_pos_rate": 0.029639762881896944,
+    "contamination": 0.05,
+    "n_estimators": 200,
+    "anomaly_threshold": -0.5480311751935526,
+    "feature_columns": [
+        "packet_rate",
+        "inter_arrival_time",
+        "payload_size",
+        "sequence_delta",
+        "timestamp_delta",
+        "session_duration",
+        "hmac_valid",
+        "seq_check_valid",
+        "timestamp_valid",
+        "payload_size_zscore",
+        "inter_arrival_zscore",
+        "rate_spike_ratio",
+        "consecutive_failures",
+        "session_packet_count"
+    ]
+}

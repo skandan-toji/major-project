@@ -1,0 +1,15 @@
+# Hybrid Quantum-Resilient Security Framework
+# Requirements for cryptographic module layer
+
+# Post-quantum cryptography (Dilithium5, Kyber1024)
+pqcrypto>=0.1.3
+
+# AES-256-GCM encryption
+pycryptodome>=3.20.0
+
+# Standard library modules used (no install needed):
+# - hmac, hashlib (HMAC-SHA256)
+# - os, secrets (secure random generation)
+# - json (serialization)
+# - struct (binary packing)
+# - time (timestamps)
