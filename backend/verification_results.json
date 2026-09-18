@@ -1,7 +1,7 @@
 {
   "simulation_params": {
-    "num_meters": 170,
-    "duration": 132.85,
+    "num_meters": 100,
+    "duration": 179.59,
     "interval": 1.0,
     "stagger": 0.1,
     "attack_prob": 0.08,
@@ -9,411 +9,411 @@
     "executor_workers": 4
   },
   "packet_stats": {
-    "total_sent": 4756,
-    "total_accepted": 4435,
-    "total_rejected": 321,
-    "acceptance_rate": 93.25,
-    "rejection_rate": 6.75,
-    "throughput_pps": 35.8
+    "total_sent": 7119,
+    "total_accepted": 6585,
+    "total_rejected": 534,
+    "acceptance_rate": 92.5,
+    "rejection_rate": 7.5,
+    "throughput_pps": 39.64
   },
   "attack_detection": {
-    "total_injected": 395,
-    "true_positives": 322,
-    "false_negatives": 73,
-    "true_negatives": 4360,
-    "false_positives": 1,
-    "detection_accuracy": 98.44,
-    "false_positive_rate": 0.02,
-    "precision": 99.69,
-    "recall": 81.52
+    "total_injected": 671,
+    "true_positives": 535,
+    "false_negatives": 136,
+    "true_negatives": 6448,
+    "false_positives": 0,
+    "detection_accuracy": 98.09,
+    "false_positive_rate": 0.0,
+    "precision": 100.0,
+    "recall": 79.73
   },
   "rejection_breakdown": {
-    "hmac_failed": 117,
-    "replay_detected": 197,
-    "stale_timestamp": 7,
+    "hmac_failed": 210,
+    "replay_detected": 322,
+    "stale_timestamp": 2,
     "session_expired": 0,
     "blacklisted": 0,
     "decryption_failed": 0,
     "other": 0
   },
   "latency_ms": {
-    "e2e_avg": 1954.26,
-    "e2e_min": 8.13,
-    "e2e_max": 63792.8,
-    "e2e_p95": 1767.28,
-    "e2e_p99": 34357.53
+    "e2e_avg": 1080.95,
+    "e2e_min": 6.86,
+    "e2e_max": 31605.2,
+    "e2e_p95": 866.1,
+    "e2e_p99": 22020.14
   },
   "session_stats": {
-    "created": 170,
-    "active": 170
+    "created": 100,
+    "active": 100
   },
   "ml_stats": {
     "loaded": true,
-    "scored": 4756,
-    "flagged": 68,
-    "tp": 9,
-    "fp": 59,
-    "tn": 4302,
-    "fn": 386,
-    "accuracy": 90.64,
-    "avg_score": -0.6721
+    "scored": 7119,
+    "flagged": 117,
+    "tp": 11,
+    "fp": 106,
+    "tn": 6342,
+    "fn": 660,
+    "accuracy": 89.24,
+    "avg_score": -0.6608
   },
   "per_meter": [
     {
       "meter_id": "SM_001",
-      "packets_sent": 26,
-      "packets_accepted": 25,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
+      "packets_sent": 90,
+      "packets_accepted": 87,
+      "packets_rejected": 3,
+      "attacks_injected": 3,
+      "attacks_detected": 3,
       "false_positives": 0
     },
     {
       "meter_id": "SM_002",
-      "packets_sent": 39,
-      "packets_accepted": 38,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_003",
-      "packets_sent": 19,
-      "packets_accepted": 16,
-      "packets_rejected": 3,
-      "attacks_injected": 5,
-      "attacks_detected": 3,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_004",
-      "packets_sent": 38,
-      "packets_accepted": 35,
-      "packets_rejected": 3,
-      "attacks_injected": 4,
-      "attacks_detected": 3,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_005",
-      "packets_sent": 39,
-      "packets_accepted": 34,
+      "packets_sent": 90,
+      "packets_accepted": 85,
       "packets_rejected": 5,
       "attacks_injected": 5,
       "attacks_detected": 5,
       "false_positives": 0
     },
     {
+      "meter_id": "SM_003",
+      "packets_sent": 76,
+      "packets_accepted": 71,
+      "packets_rejected": 5,
+      "attacks_injected": 6,
+      "attacks_detected": 5,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_004",
+      "packets_sent": 79,
+      "packets_accepted": 75,
+      "packets_rejected": 4,
+      "attacks_injected": 5,
+      "attacks_detected": 4,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_005",
+      "packets_sent": 61,
+      "packets_accepted": 55,
+      "packets_rejected": 6,
+      "attacks_injected": 9,
+      "attacks_detected": 6,
+      "false_positives": 0
+    },
+    {
       "meter_id": "SM_006",
-      "packets_sent": 38,
-      "packets_accepted": 37,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 76,
+      "packets_accepted": 65,
+      "packets_rejected": 11,
+      "attacks_injected": 12,
+      "attacks_detected": 11,
       "false_positives": 0
     },
     {
       "meter_id": "SM_007",
-      "packets_sent": 23,
-      "packets_accepted": 23,
-      "packets_rejected": 0,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
+      "packets_sent": 90,
+      "packets_accepted": 87,
+      "packets_rejected": 3,
+      "attacks_injected": 3,
+      "attacks_detected": 3,
       "false_positives": 0
     },
     {
       "meter_id": "SM_008",
-      "packets_sent": 39,
-      "packets_accepted": 35,
+      "packets_sent": 80,
+      "packets_accepted": 76,
       "packets_rejected": 4,
-      "attacks_injected": 4,
+      "attacks_injected": 5,
       "attacks_detected": 4,
       "false_positives": 0
     },
     {
       "meter_id": "SM_009",
-      "packets_sent": 25,
-      "packets_accepted": 23,
-      "packets_rejected": 2,
-      "attacks_injected": 3,
-      "attacks_detected": 2,
+      "packets_sent": 78,
+      "packets_accepted": 69,
+      "packets_rejected": 9,
+      "attacks_injected": 10,
+      "attacks_detected": 9,
       "false_positives": 0
     },
     {
       "meter_id": "SM_010",
-      "packets_sent": 39,
-      "packets_accepted": 37,
+      "packets_sent": 68,
+      "packets_accepted": 66,
       "packets_rejected": 2,
-      "attacks_injected": 2,
+      "attacks_injected": 4,
       "attacks_detected": 2,
       "false_positives": 0
     },
     {
       "meter_id": "SM_011",
-      "packets_sent": 39,
-      "packets_accepted": 38,
+      "packets_sent": 65,
+      "packets_accepted": 64,
       "packets_rejected": 1,
-      "attacks_injected": 1,
+      "attacks_injected": 3,
       "attacks_detected": 1,
       "false_positives": 0
     },
     {
       "meter_id": "SM_012",
-      "packets_sent": 39,
-      "packets_accepted": 36,
-      "packets_rejected": 3,
-      "attacks_injected": 3,
-      "attacks_detected": 3,
+      "packets_sent": 51,
+      "packets_accepted": 45,
+      "packets_rejected": 6,
+      "attacks_injected": 9,
+      "attacks_detected": 6,
       "false_positives": 0
     },
     {
       "meter_id": "SM_013",
-      "packets_sent": 39,
-      "packets_accepted": 39,
-      "packets_rejected": 0,
-      "attacks_injected": 0,
-      "attacks_detected": 0,
+      "packets_sent": 79,
+      "packets_accepted": 70,
+      "packets_rejected": 9,
+      "attacks_injected": 10,
+      "attacks_detected": 9,
       "false_positives": 0
     },
     {
       "meter_id": "SM_014",
-      "packets_sent": 39,
-      "packets_accepted": 36,
-      "packets_rejected": 3,
-      "attacks_injected": 3,
-      "attacks_detected": 3,
+      "packets_sent": 74,
+      "packets_accepted": 69,
+      "packets_rejected": 5,
+      "attacks_injected": 7,
+      "attacks_detected": 6,
       "false_positives": 0
     },
     {
       "meter_id": "SM_015",
-      "packets_sent": 29,
-      "packets_accepted": 25,
-      "packets_rejected": 4,
-      "attacks_injected": 5,
-      "attacks_detected": 4,
+      "packets_sent": 81,
+      "packets_accepted": 70,
+      "packets_rejected": 11,
+      "attacks_injected": 12,
+      "attacks_detected": 11,
       "false_positives": 0
     },
     {
       "meter_id": "SM_016",
-      "packets_sent": 39,
-      "packets_accepted": 37,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 66,
+      "packets_accepted": 62,
+      "packets_rejected": 4,
+      "attacks_injected": 6,
+      "attacks_detected": 4,
       "false_positives": 0
     },
     {
       "meter_id": "SM_017",
-      "packets_sent": 38,
-      "packets_accepted": 38,
-      "packets_rejected": 0,
-      "attacks_injected": 0,
-      "attacks_detected": 0,
+      "packets_sent": 70,
+      "packets_accepted": 58,
+      "packets_rejected": 12,
+      "attacks_injected": 14,
+      "attacks_detected": 12,
       "false_positives": 0
     },
     {
       "meter_id": "SM_018",
-      "packets_sent": 38,
-      "packets_accepted": 36,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 89,
+      "packets_accepted": 83,
+      "packets_rejected": 6,
+      "attacks_injected": 6,
+      "attacks_detected": 6,
       "false_positives": 0
     },
     {
       "meter_id": "SM_019",
-      "packets_sent": 38,
-      "packets_accepted": 36,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 56,
+      "packets_accepted": 51,
+      "packets_rejected": 5,
+      "attacks_injected": 9,
+      "attacks_detected": 5,
       "false_positives": 0
     },
     {
       "meter_id": "SM_020",
-      "packets_sent": 23,
-      "packets_accepted": 20,
-      "packets_rejected": 3,
-      "attacks_injected": 4,
-      "attacks_detected": 3,
+      "packets_sent": 74,
+      "packets_accepted": 68,
+      "packets_rejected": 6,
+      "attacks_injected": 7,
+      "attacks_detected": 6,
       "false_positives": 0
     },
     {
       "meter_id": "SM_021",
-      "packets_sent": 36,
-      "packets_accepted": 33,
-      "packets_rejected": 3,
-      "attacks_injected": 4,
-      "attacks_detected": 3,
+      "packets_sent": 89,
+      "packets_accepted": 82,
+      "packets_rejected": 7,
+      "attacks_injected": 7,
+      "attacks_detected": 7,
       "false_positives": 0
     },
     {
       "meter_id": "SM_022",
-      "packets_sent": 38,
-      "packets_accepted": 36,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 78,
+      "packets_accepted": 73,
+      "packets_rejected": 5,
+      "attacks_injected": 6,
+      "attacks_detected": 5,
       "false_positives": 0
     },
     {
       "meter_id": "SM_023",
-      "packets_sent": 26,
-      "packets_accepted": 22,
-      "packets_rejected": 4,
-      "attacks_injected": 5,
-      "attacks_detected": 4,
+      "packets_sent": 74,
+      "packets_accepted": 72,
+      "packets_rejected": 2,
+      "attacks_injected": 3,
+      "attacks_detected": 2,
       "false_positives": 0
     },
     {
       "meter_id": "SM_024",
-      "packets_sent": 27,
-      "packets_accepted": 24,
-      "packets_rejected": 3,
-      "attacks_injected": 4,
-      "attacks_detected": 3,
+      "packets_sent": 74,
+      "packets_accepted": 64,
+      "packets_rejected": 10,
+      "attacks_injected": 11,
+      "attacks_detected": 10,
       "false_positives": 0
     },
     {
       "meter_id": "SM_025",
-      "packets_sent": 27,
-      "packets_accepted": 27,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
+      "packets_sent": 77,
+      "packets_accepted": 72,
+      "packets_rejected": 5,
+      "attacks_injected": 6,
+      "attacks_detected": 5,
       "false_positives": 0
     },
     {
       "meter_id": "SM_026",
-      "packets_sent": 38,
-      "packets_accepted": 36,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 77,
+      "packets_accepted": 71,
+      "packets_rejected": 6,
+      "attacks_injected": 7,
+      "attacks_detected": 6,
       "false_positives": 0
     },
     {
       "meter_id": "SM_027",
-      "packets_sent": 37,
-      "packets_accepted": 34,
-      "packets_rejected": 3,
-      "attacks_injected": 3,
-      "attacks_detected": 3,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_028",
-      "packets_sent": 37,
-      "packets_accepted": 35,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_029",
-      "packets_sent": 37,
-      "packets_accepted": 35,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_030",
-      "packets_sent": 37,
-      "packets_accepted": 29,
-      "packets_rejected": 8,
-      "attacks_injected": 8,
-      "attacks_detected": 8,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_031",
-      "packets_sent": 37,
-      "packets_accepted": 34,
-      "packets_rejected": 3,
-      "attacks_injected": 3,
-      "attacks_detected": 3,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_032",
-      "packets_sent": 24,
-      "packets_accepted": 23,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_033",
-      "packets_sent": 37,
-      "packets_accepted": 33,
+      "packets_sent": 88,
+      "packets_accepted": 84,
       "packets_rejected": 4,
       "attacks_injected": 4,
       "attacks_detected": 4,
       "false_positives": 0
     },
     {
+      "meter_id": "SM_028",
+      "packets_sent": 74,
+      "packets_accepted": 63,
+      "packets_rejected": 11,
+      "attacks_injected": 12,
+      "attacks_detected": 11,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_029",
+      "packets_sent": 64,
+      "packets_accepted": 61,
+      "packets_rejected": 3,
+      "attacks_injected": 5,
+      "attacks_detected": 3,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_030",
+      "packets_sent": 78,
+      "packets_accepted": 73,
+      "packets_rejected": 5,
+      "attacks_injected": 6,
+      "attacks_detected": 5,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_031",
+      "packets_sent": 57,
+      "packets_accepted": 53,
+      "packets_rejected": 4,
+      "attacks_injected": 7,
+      "attacks_detected": 4,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_032",
+      "packets_sent": 88,
+      "packets_accepted": 81,
+      "packets_rejected": 7,
+      "attacks_injected": 7,
+      "attacks_detected": 7,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_033",
+      "packets_sent": 66,
+      "packets_accepted": 60,
+      "packets_rejected": 6,
+      "attacks_injected": 8,
+      "attacks_detected": 6,
+      "false_positives": 0
+    },
+    {
       "meter_id": "SM_034",
-      "packets_sent": 37,
-      "packets_accepted": 35,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 78,
+      "packets_accepted": 68,
+      "packets_rejected": 10,
+      "attacks_injected": 11,
+      "attacks_detected": 10,
       "false_positives": 0
     },
     {
       "meter_id": "SM_035",
-      "packets_sent": 37,
-      "packets_accepted": 36,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
+      "packets_sent": 76,
+      "packets_accepted": 69,
+      "packets_rejected": 7,
+      "attacks_injected": 8,
+      "attacks_detected": 7,
       "false_positives": 0
     },
     {
       "meter_id": "SM_036",
-      "packets_sent": 25,
-      "packets_accepted": 24,
-      "packets_rejected": 1,
-      "attacks_injected": 3,
-      "attacks_detected": 1,
+      "packets_sent": 67,
+      "packets_accepted": 61,
+      "packets_rejected": 6,
+      "attacks_injected": 8,
+      "attacks_detected": 6,
       "false_positives": 0
     },
     {
       "meter_id": "SM_037",
-      "packets_sent": 36,
-      "packets_accepted": 35,
+      "packets_sent": 51,
+      "packets_accepted": 50,
       "packets_rejected": 1,
-      "attacks_injected": 1,
+      "attacks_injected": 5,
       "attacks_detected": 1,
       "false_positives": 0
     },
     {
       "meter_id": "SM_038",
-      "packets_sent": 36,
-      "packets_accepted": 31,
-      "packets_rejected": 5,
-      "attacks_injected": 5,
-      "attacks_detected": 5,
+      "packets_sent": 76,
+      "packets_accepted": 69,
+      "packets_rejected": 7,
+      "attacks_injected": 8,
+      "attacks_detected": 7,
       "false_positives": 0
     },
     {
       "meter_id": "SM_039",
-      "packets_sent": 36,
-      "packets_accepted": 33,
-      "packets_rejected": 3,
-      "attacks_injected": 3,
-      "attacks_detected": 3,
+      "packets_sent": 61,
+      "packets_accepted": 57,
+      "packets_rejected": 4,
+      "attacks_injected": 7,
+      "attacks_detected": 4,
       "false_positives": 0
     },
     {
       "meter_id": "SM_040",
-      "packets_sent": 22,
-      "packets_accepted": 20,
+      "packets_sent": 76,
+      "packets_accepted": 74,
       "packets_rejected": 2,
       "attacks_injected": 3,
       "attacks_detected": 2,
@@ -421,143 +421,143 @@
     },
     {
       "meter_id": "SM_041",
-      "packets_sent": 36,
-      "packets_accepted": 33,
+      "packets_sent": 63,
+      "packets_accepted": 60,
       "packets_rejected": 3,
-      "attacks_injected": 3,
+      "attacks_injected": 5,
       "attacks_detected": 3,
       "false_positives": 0
     },
     {
       "meter_id": "SM_042",
-      "packets_sent": 36,
-      "packets_accepted": 33,
-      "packets_rejected": 3,
+      "packets_sent": 72,
+      "packets_accepted": 70,
+      "packets_rejected": 2,
       "attacks_injected": 3,
-      "attacks_detected": 3,
+      "attacks_detected": 2,
       "false_positives": 0
     },
     {
       "meter_id": "SM_043",
-      "packets_sent": 34,
-      "packets_accepted": 30,
+      "packets_sent": 86,
+      "packets_accepted": 79,
+      "packets_rejected": 7,
+      "attacks_injected": 7,
+      "attacks_detected": 7,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_044",
+      "packets_sent": 77,
+      "packets_accepted": 74,
+      "packets_rejected": 3,
+      "attacks_injected": 4,
+      "attacks_detected": 3,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_045",
+      "packets_sent": 81,
+      "packets_accepted": 76,
+      "packets_rejected": 5,
+      "attacks_injected": 6,
+      "attacks_detected": 5,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_046",
+      "packets_sent": 68,
+      "packets_accepted": 64,
+      "packets_rejected": 4,
+      "attacks_injected": 6,
+      "attacks_detected": 4,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_047",
+      "packets_sent": 61,
+      "packets_accepted": 54,
+      "packets_rejected": 7,
+      "attacks_injected": 9,
+      "attacks_detected": 7,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_048",
+      "packets_sent": 66,
+      "packets_accepted": 60,
+      "packets_rejected": 6,
+      "attacks_injected": 8,
+      "attacks_detected": 6,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_049",
+      "packets_sent": 74,
+      "packets_accepted": 73,
+      "packets_rejected": 1,
+      "attacks_injected": 2,
+      "attacks_detected": 1,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_050",
+      "packets_sent": 62,
+      "packets_accepted": 56,
+      "packets_rejected": 6,
+      "attacks_injected": 8,
+      "attacks_detected": 6,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_051",
+      "packets_sent": 76,
+      "packets_accepted": 69,
+      "packets_rejected": 7,
+      "attacks_injected": 8,
+      "attacks_detected": 7,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_052",
+      "packets_sent": 65,
+      "packets_accepted": 60,
+      "packets_rejected": 5,
+      "attacks_injected": 7,
+      "attacks_detected": 5,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_053",
+      "packets_sent": 74,
+      "packets_accepted": 70,
       "packets_rejected": 4,
       "attacks_injected": 5,
       "attacks_detected": 4,
       "false_positives": 0
     },
     {
-      "meter_id": "SM_044",
-      "packets_sent": 36,
-      "packets_accepted": 36,
-      "packets_rejected": 0,
-      "attacks_injected": 0,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_045",
-      "packets_sent": 19,
-      "packets_accepted": 17,
-      "packets_rejected": 2,
-      "attacks_injected": 3,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_046",
-      "packets_sent": 15,
-      "packets_accepted": 12,
-      "packets_rejected": 3,
-      "attacks_injected": 5,
-      "attacks_detected": 3,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_047",
-      "packets_sent": 35,
-      "packets_accepted": 35,
-      "packets_rejected": 0,
-      "attacks_injected": 0,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_048",
-      "packets_sent": 20,
-      "packets_accepted": 19,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_049",
-      "packets_sent": 35,
-      "packets_accepted": 33,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_050",
-      "packets_sent": 35,
-      "packets_accepted": 29,
-      "packets_rejected": 6,
-      "attacks_injected": 6,
-      "attacks_detected": 6,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_051",
-      "packets_sent": 10,
-      "packets_accepted": 10,
-      "packets_rejected": 0,
-      "attacks_injected": 2,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_052",
-      "packets_sent": 35,
-      "packets_accepted": 34,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_053",
-      "packets_sent": 25,
-      "packets_accepted": 23,
-      "packets_rejected": 2,
-      "attacks_injected": 3,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
       "meter_id": "SM_054",
-      "packets_sent": 35,
-      "packets_accepted": 33,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 85,
+      "packets_accepted": 81,
+      "packets_rejected": 4,
+      "attacks_injected": 4,
+      "attacks_detected": 4,
       "false_positives": 0
     },
     {
       "meter_id": "SM_055",
-      "packets_sent": 21,
-      "packets_accepted": 19,
-      "packets_rejected": 2,
-      "attacks_injected": 3,
-      "attacks_detected": 2,
+      "packets_sent": 77,
+      "packets_accepted": 67,
+      "packets_rejected": 10,
+      "attacks_injected": 11,
+      "attacks_detected": 10,
       "false_positives": 0
     },
     {
       "meter_id": "SM_056",
-      "packets_sent": 21,
-      "packets_accepted": 18,
+      "packets_sent": 65,
+      "packets_accepted": 62,
       "packets_rejected": 3,
       "attacks_injected": 5,
       "attacks_detected": 3,
@@ -565,1738 +565,1108 @@
     },
     {
       "meter_id": "SM_057",
-      "packets_sent": 25,
-      "packets_accepted": 23,
-      "packets_rejected": 2,
-      "attacks_injected": 3,
-      "attacks_detected": 2,
+      "packets_sent": 59,
+      "packets_accepted": 51,
+      "packets_rejected": 8,
+      "attacks_injected": 10,
+      "attacks_detected": 8,
       "false_positives": 0
     },
     {
       "meter_id": "SM_058",
-      "packets_sent": 27,
-      "packets_accepted": 27,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
+      "packets_sent": 72,
+      "packets_accepted": 65,
+      "packets_rejected": 7,
+      "attacks_injected": 8,
+      "attacks_detected": 7,
       "false_positives": 0
     },
     {
       "meter_id": "SM_059",
-      "packets_sent": 34,
-      "packets_accepted": 32,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 53,
+      "packets_accepted": 46,
+      "packets_rejected": 7,
+      "attacks_injected": 10,
+      "attacks_detected": 7,
       "false_positives": 0
     },
     {
       "meter_id": "SM_060",
-      "packets_sent": 21,
-      "packets_accepted": 20,
-      "packets_rejected": 1,
+      "packets_sent": 85,
+      "packets_accepted": 83,
+      "packets_rejected": 2,
       "attacks_injected": 2,
-      "attacks_detected": 1,
+      "attacks_detected": 2,
       "false_positives": 0
     },
     {
       "meter_id": "SM_061",
-      "packets_sent": 34,
-      "packets_accepted": 29,
-      "packets_rejected": 5,
-      "attacks_injected": 5,
-      "attacks_detected": 5,
+      "packets_sent": 64,
+      "packets_accepted": 60,
+      "packets_rejected": 4,
+      "attacks_injected": 6,
+      "attacks_detected": 4,
       "false_positives": 0
     },
     {
       "meter_id": "SM_062",
-      "packets_sent": 34,
-      "packets_accepted": 33,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
+      "packets_sent": 71,
+      "packets_accepted": 64,
+      "packets_rejected": 7,
+      "attacks_injected": 9,
+      "attacks_detected": 7,
       "false_positives": 0
     },
     {
       "meter_id": "SM_063",
-      "packets_sent": 29,
-      "packets_accepted": 25,
+      "packets_sent": 76,
+      "packets_accepted": 63,
+      "packets_rejected": 13,
+      "attacks_injected": 14,
+      "attacks_detected": 13,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_064",
+      "packets_sent": 74,
+      "packets_accepted": 70,
       "packets_rejected": 4,
       "attacks_injected": 5,
       "attacks_detected": 4,
       "false_positives": 0
     },
     {
-      "meter_id": "SM_064",
-      "packets_sent": 33,
-      "packets_accepted": 30,
+      "meter_id": "SM_065",
+      "packets_sent": 84,
+      "packets_accepted": 81,
       "packets_rejected": 3,
       "attacks_injected": 3,
       "attacks_detected": 3,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_065",
-      "packets_sent": 33,
-      "packets_accepted": 31,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
       "false_positives": 0
     },
     {
       "meter_id": "SM_066",
-      "packets_sent": 33,
-      "packets_accepted": 31,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 73,
+      "packets_accepted": 68,
+      "packets_rejected": 5,
+      "attacks_injected": 6,
+      "attacks_detected": 5,
       "false_positives": 0
     },
     {
       "meter_id": "SM_067",
-      "packets_sent": 18,
-      "packets_accepted": 18,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
+      "packets_sent": 73,
+      "packets_accepted": 66,
+      "packets_rejected": 7,
+      "attacks_injected": 8,
+      "attacks_detected": 7,
       "false_positives": 0
     },
     {
       "meter_id": "SM_068",
-      "packets_sent": 33,
-      "packets_accepted": 29,
-      "packets_rejected": 4,
-      "attacks_injected": 4,
-      "attacks_detected": 4,
+      "packets_sent": 73,
+      "packets_accepted": 65,
+      "packets_rejected": 8,
+      "attacks_injected": 10,
+      "attacks_detected": 8,
       "false_positives": 0
     },
     {
       "meter_id": "SM_069",
-      "packets_sent": 33,
-      "packets_accepted": 33,
-      "packets_rejected": 0,
-      "attacks_injected": 0,
-      "attacks_detected": 0,
+      "packets_sent": 72,
+      "packets_accepted": 67,
+      "packets_rejected": 5,
+      "attacks_injected": 6,
+      "attacks_detected": 5,
       "false_positives": 0
     },
     {
       "meter_id": "SM_070",
-      "packets_sent": 33,
-      "packets_accepted": 29,
-      "packets_rejected": 4,
-      "attacks_injected": 4,
-      "attacks_detected": 4,
+      "packets_sent": 63,
+      "packets_accepted": 54,
+      "packets_rejected": 9,
+      "attacks_injected": 11,
+      "attacks_detected": 9,
       "false_positives": 0
     },
     {
       "meter_id": "SM_071",
-      "packets_sent": 20,
-      "packets_accepted": 19,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
+      "packets_sent": 74,
+      "packets_accepted": 72,
+      "packets_rejected": 2,
+      "attacks_injected": 3,
+      "attacks_detected": 2,
       "false_positives": 0
     },
     {
       "meter_id": "SM_072",
-      "packets_sent": 31,
-      "packets_accepted": 31,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
+      "packets_sent": 54,
+      "packets_accepted": 51,
+      "packets_rejected": 3,
+      "attacks_injected": 6,
+      "attacks_detected": 3,
       "false_positives": 0
     },
     {
       "meter_id": "SM_073",
-      "packets_sent": 27,
-      "packets_accepted": 26,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
+      "packets_sent": 83,
+      "packets_accepted": 74,
+      "packets_rejected": 9,
+      "attacks_injected": 9,
+      "attacks_detected": 9,
       "false_positives": 0
     },
     {
       "meter_id": "SM_074",
-      "packets_sent": 32,
-      "packets_accepted": 30,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 83,
+      "packets_accepted": 72,
+      "packets_rejected": 11,
+      "attacks_injected": 11,
+      "attacks_detected": 11,
       "false_positives": 0
     },
     {
       "meter_id": "SM_075",
-      "packets_sent": 21,
-      "packets_accepted": 20,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
+      "packets_sent": 73,
+      "packets_accepted": 68,
+      "packets_rejected": 5,
+      "attacks_injected": 6,
+      "attacks_detected": 5,
       "false_positives": 0
     },
     {
       "meter_id": "SM_076",
-      "packets_sent": 32,
-      "packets_accepted": 32,
-      "packets_rejected": 0,
-      "attacks_injected": 0,
-      "attacks_detected": 0,
+      "packets_sent": 72,
+      "packets_accepted": 66,
+      "packets_rejected": 6,
+      "attacks_injected": 7,
+      "attacks_detected": 6,
       "false_positives": 0
     },
     {
       "meter_id": "SM_077",
-      "packets_sent": 32,
-      "packets_accepted": 28,
-      "packets_rejected": 4,
-      "attacks_injected": 4,
-      "attacks_detected": 4,
+      "packets_sent": 74,
+      "packets_accepted": 67,
+      "packets_rejected": 7,
+      "attacks_injected": 8,
+      "attacks_detected": 7,
       "false_positives": 0
     },
     {
       "meter_id": "SM_078",
-      "packets_sent": 32,
-      "packets_accepted": 29,
-      "packets_rejected": 3,
-      "attacks_injected": 3,
-      "attacks_detected": 3,
+      "packets_sent": 73,
+      "packets_accepted": 68,
+      "packets_rejected": 5,
+      "attacks_injected": 6,
+      "attacks_detected": 5,
       "false_positives": 0
     },
     {
       "meter_id": "SM_079",
-      "packets_sent": 32,
-      "packets_accepted": 29,
-      "packets_rejected": 3,
-      "attacks_injected": 3,
-      "attacks_detected": 2,
-      "false_positives": 1
+      "packets_sent": 62,
+      "packets_accepted": 56,
+      "packets_rejected": 6,
+      "attacks_injected": 8,
+      "attacks_detected": 6,
+      "false_positives": 0
     },
     {
       "meter_id": "SM_080",
-      "packets_sent": 23,
-      "packets_accepted": 22,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
+      "packets_sent": 73,
+      "packets_accepted": 63,
+      "packets_rejected": 10,
+      "attacks_injected": 11,
+      "attacks_detected": 10,
       "false_positives": 0
     },
     {
       "meter_id": "SM_081",
-      "packets_sent": 32,
-      "packets_accepted": 30,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
+      "packets_sent": 44,
+      "packets_accepted": 40,
+      "packets_rejected": 4,
+      "attacks_injected": 7,
+      "attacks_detected": 4,
       "false_positives": 0
     },
     {
       "meter_id": "SM_082",
-      "packets_sent": 32,
-      "packets_accepted": 29,
-      "packets_rejected": 3,
-      "attacks_injected": 3,
-      "attacks_detected": 3,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_083",
-      "packets_sent": 32,
-      "packets_accepted": 31,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_084",
-      "packets_sent": 32,
-      "packets_accepted": 30,
+      "packets_sent": 50,
+      "packets_accepted": 48,
       "packets_rejected": 2,
-      "attacks_injected": 2,
+      "attacks_injected": 5,
       "attacks_detected": 2,
       "false_positives": 0
     },
     {
-      "meter_id": "SM_085",
-      "packets_sent": 25,
-      "packets_accepted": 22,
-      "packets_rejected": 3,
-      "attacks_injected": 4,
-      "attacks_detected": 3,
+      "meter_id": "SM_083",
+      "packets_sent": 72,
+      "packets_accepted": 68,
+      "packets_rejected": 4,
+      "attacks_injected": 5,
+      "attacks_detected": 4,
       "false_positives": 0
     },
     {
-      "meter_id": "SM_086",
-      "packets_sent": 32,
-      "packets_accepted": 27,
+      "meter_id": "SM_084",
+      "packets_sent": 81,
+      "packets_accepted": 76,
+      "packets_rejected": 5,
+      "attacks_injected": 6,
+      "attacks_detected": 5,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_085",
+      "packets_sent": 82,
+      "packets_accepted": 77,
       "packets_rejected": 5,
       "attacks_injected": 5,
       "attacks_detected": 5,
       "false_positives": 0
     },
     {
+      "meter_id": "SM_086",
+      "packets_sent": 82,
+      "packets_accepted": 73,
+      "packets_rejected": 9,
+      "attacks_injected": 9,
+      "attacks_detected": 9,
+      "false_positives": 0
+    },
+    {
       "meter_id": "SM_087",
-      "packets_sent": 31,
-      "packets_accepted": 29,
+      "packets_sent": 74,
+      "packets_accepted": 72,
       "packets_rejected": 2,
-      "attacks_injected": 2,
+      "attacks_injected": 3,
       "attacks_detected": 2,
       "false_positives": 0
     },
     {
       "meter_id": "SM_088",
-      "packets_sent": 31,
-      "packets_accepted": 27,
+      "packets_sent": 57,
+      "packets_accepted": 57,
+      "packets_rejected": 0,
+      "attacks_injected": 2,
+      "attacks_detected": 0,
+      "false_positives": 0
+    },
+    {
+      "meter_id": "SM_089",
+      "packets_sent": 73,
+      "packets_accepted": 69,
       "packets_rejected": 4,
       "attacks_injected": 5,
       "attacks_detected": 4,
       "false_positives": 0
     },
     {
-      "meter_id": "SM_089",
-      "packets_sent": 16,
-      "packets_accepted": 16,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
       "meter_id": "SM_090",
-      "packets_sent": 16,
-      "packets_accepted": 15,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
+      "packets_sent": 58,
+      "packets_accepted": 55,
+      "packets_rejected": 3,
+      "attacks_injected": 5,
+      "attacks_detected": 3,
       "false_positives": 0
     },
     {
       "meter_id": "SM_091",
-      "packets_sent": 31,
-      "packets_accepted": 30,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
+      "packets_sent": 70,
+      "packets_accepted": 68,
+      "packets_rejected": 2,
+      "attacks_injected": 3,
+      "attacks_detected": 2,
       "false_positives": 0
     },
     {
       "meter_id": "SM_092",
-      "packets_sent": 15,
-      "packets_accepted": 12,
+      "packets_sent": 48,
+      "packets_accepted": 45,
       "packets_rejected": 3,
-      "attacks_injected": 4,
+      "attacks_injected": 6,
       "attacks_detected": 3,
       "false_positives": 0
     },
     {
       "meter_id": "SM_093",
-      "packets_sent": 25,
-      "packets_accepted": 21,
-      "packets_rejected": 4,
-      "attacks_injected": 5,
-      "attacks_detected": 4,
+      "packets_sent": 68,
+      "packets_accepted": 65,
+      "packets_rejected": 3,
+      "attacks_injected": 4,
+      "attacks_detected": 3,
       "false_positives": 0
     },
     {
       "meter_id": "SM_094",
-      "packets_sent": 31,
-      "packets_accepted": 29,
-      "packets_rejected": 2,
+      "packets_sent": 60,
+      "packets_accepted": 60,
+      "packets_rejected": 0,
       "attacks_injected": 2,
-      "attacks_detected": 2,
+      "attacks_detected": 0,
       "false_positives": 0
     },
     {
       "meter_id": "SM_095",
-      "packets_sent": 31,
-      "packets_accepted": 28,
-      "packets_rejected": 3,
-      "attacks_injected": 3,
-      "attacks_detected": 3,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_096",
-      "packets_sent": 31,
-      "packets_accepted": 29,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_097",
-      "packets_sent": 23,
-      "packets_accepted": 22,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_098",
-      "packets_sent": 28,
-      "packets_accepted": 26,
-      "packets_rejected": 2,
-      "attacks_injected": 3,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_099",
-      "packets_sent": 10,
-      "packets_accepted": 9,
-      "packets_rejected": 1,
-      "attacks_injected": 3,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_100",
-      "packets_sent": 31,
-      "packets_accepted": 29,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_101",
-      "packets_sent": 30,
-      "packets_accepted": 29,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_102",
-      "packets_sent": 25,
-      "packets_accepted": 24,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_103",
-      "packets_sent": 30,
-      "packets_accepted": 29,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_104",
-      "packets_sent": 3,
-      "packets_accepted": 3,
-      "packets_rejected": 0,
-      "attacks_injected": 2,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_105",
-      "packets_sent": 30,
-      "packets_accepted": 28,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_106",
-      "packets_sent": 30,
-      "packets_accepted": 29,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_107",
-      "packets_sent": 30,
-      "packets_accepted": 29,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_108",
-      "packets_sent": 16,
-      "packets_accepted": 16,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_109",
-      "packets_sent": 19,
-      "packets_accepted": 18,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_110",
-      "packets_sent": 30,
-      "packets_accepted": 24,
+      "packets_sent": 69,
+      "packets_accepted": 63,
       "packets_rejected": 6,
-      "attacks_injected": 6,
+      "attacks_injected": 7,
       "attacks_detected": 6,
       "false_positives": 0
     },
     {
-      "meter_id": "SM_111",
-      "packets_sent": 16,
-      "packets_accepted": 15,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_112",
-      "packets_sent": 13,
-      "packets_accepted": 11,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_113",
-      "packets_sent": 30,
-      "packets_accepted": 28,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_114",
-      "packets_sent": 30,
-      "packets_accepted": 29,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_115",
-      "packets_sent": 30,
-      "packets_accepted": 28,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_116",
-      "packets_sent": 29,
-      "packets_accepted": 28,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_117",
-      "packets_sent": 26,
-      "packets_accepted": 26,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_118",
-      "packets_sent": 20,
-      "packets_accepted": 17,
-      "packets_rejected": 3,
-      "attacks_injected": 4,
-      "attacks_detected": 3,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_119",
-      "packets_sent": 29,
-      "packets_accepted": 28,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_120",
-      "packets_sent": 16,
-      "packets_accepted": 16,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_121",
-      "packets_sent": 19,
-      "packets_accepted": 17,
-      "packets_rejected": 2,
-      "attacks_injected": 3,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_122",
-      "packets_sent": 29,
-      "packets_accepted": 27,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_123",
-      "packets_sent": 29,
-      "packets_accepted": 27,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_124",
-      "packets_sent": 25,
-      "packets_accepted": 25,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_125",
-      "packets_sent": 29,
-      "packets_accepted": 28,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_126",
-      "packets_sent": 29,
-      "packets_accepted": 26,
-      "packets_rejected": 3,
-      "attacks_injected": 3,
-      "attacks_detected": 3,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_127",
-      "packets_sent": 29,
-      "packets_accepted": 28,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_128",
-      "packets_sent": 29,
-      "packets_accepted": 27,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_129",
-      "packets_sent": 29,
-      "packets_accepted": 25,
+      "meter_id": "SM_096",
+      "packets_sent": 71,
+      "packets_accepted": 67,
       "packets_rejected": 4,
-      "attacks_injected": 4,
-      "attacks_detected": 4,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_130",
-      "packets_sent": 29,
-      "packets_accepted": 27,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_131",
-      "packets_sent": 29,
-      "packets_accepted": 24,
-      "packets_rejected": 5,
       "attacks_injected": 5,
-      "attacks_detected": 5,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_132",
-      "packets_sent": 29,
-      "packets_accepted": 25,
-      "packets_rejected": 4,
-      "attacks_injected": 4,
       "attacks_detected": 4,
       "false_positives": 0
     },
     {
-      "meter_id": "SM_133",
-      "packets_sent": 29,
-      "packets_accepted": 27,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_134",
-      "packets_sent": 29,
-      "packets_accepted": 26,
+      "meter_id": "SM_097",
+      "packets_sent": 62,
+      "packets_accepted": 59,
       "packets_rejected": 3,
-      "attacks_injected": 3,
+      "attacks_injected": 5,
       "attacks_detected": 3,
       "false_positives": 0
     },
     {
-      "meter_id": "SM_135",
-      "packets_sent": 29,
-      "packets_accepted": 27,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_136",
-      "packets_sent": 29,
-      "packets_accepted": 27,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_137",
-      "packets_sent": 28,
-      "packets_accepted": 27,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_138",
-      "packets_sent": 28,
-      "packets_accepted": 26,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_139",
-      "packets_sent": 28,
-      "packets_accepted": 27,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_140",
-      "packets_sent": 28,
-      "packets_accepted": 28,
-      "packets_rejected": 0,
-      "attacks_injected": 0,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_141",
-      "packets_sent": 16,
-      "packets_accepted": 16,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_142",
-      "packets_sent": 13,
-      "packets_accepted": 12,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_143",
-      "packets_sent": 28,
-      "packets_accepted": 26,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_144",
-      "packets_sent": 19,
-      "packets_accepted": 18,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_145",
-      "packets_sent": 28,
-      "packets_accepted": 28,
-      "packets_rejected": 0,
-      "attacks_injected": 0,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_146",
-      "packets_sent": 14,
-      "packets_accepted": 13,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_147",
-      "packets_sent": 28,
-      "packets_accepted": 26,
-      "packets_rejected": 2,
-      "attacks_injected": 3,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_148",
-      "packets_sent": 17,
-      "packets_accepted": 16,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_149",
-      "packets_sent": 11,
-      "packets_accepted": 9,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_150",
-      "packets_sent": 28,
-      "packets_accepted": 25,
-      "packets_rejected": 3,
-      "attacks_injected": 3,
-      "attacks_detected": 3,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_151",
-      "packets_sent": 21,
-      "packets_accepted": 20,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_152",
-      "packets_sent": 28,
-      "packets_accepted": 27,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_153",
-      "packets_sent": 28,
-      "packets_accepted": 26,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_154",
-      "packets_sent": 28,
-      "packets_accepted": 26,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_155",
-      "packets_sent": 11,
-      "packets_accepted": 11,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_156",
-      "packets_sent": 18,
-      "packets_accepted": 17,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_157",
-      "packets_sent": 14,
-      "packets_accepted": 14,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_158",
-      "packets_sent": 27,
-      "packets_accepted": 27,
-      "packets_rejected": 0,
-      "attacks_injected": 0,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_159",
-      "packets_sent": 27,
-      "packets_accepted": 26,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_160",
-      "packets_sent": 27,
-      "packets_accepted": 25,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_161",
-      "packets_sent": 27,
-      "packets_accepted": 27,
-      "packets_rejected": 0,
-      "attacks_injected": 0,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_162",
-      "packets_sent": 27,
-      "packets_accepted": 26,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_163",
-      "packets_sent": 13,
-      "packets_accepted": 13,
-      "packets_rejected": 0,
-      "attacks_injected": 1,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_164",
-      "packets_sent": 22,
-      "packets_accepted": 21,
-      "packets_rejected": 1,
-      "attacks_injected": 2,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_165",
-      "packets_sent": 27,
-      "packets_accepted": 23,
+      "meter_id": "SM_098",
+      "packets_sent": 44,
+      "packets_accepted": 40,
       "packets_rejected": 4,
-      "attacks_injected": 4,
+      "attacks_injected": 7,
       "attacks_detected": 4,
       "false_positives": 0
     },
     {
-      "meter_id": "SM_166",
-      "packets_sent": 19,
-      "packets_accepted": 17,
-      "packets_rejected": 2,
-      "attacks_injected": 3,
-      "attacks_detected": 2,
+      "meter_id": "SM_099",
+      "packets_sent": 68,
+      "packets_accepted": 65,
+      "packets_rejected": 3,
+      "attacks_injected": 4,
+      "attacks_detected": 3,
       "false_positives": 0
     },
     {
-      "meter_id": "SM_167",
-      "packets_sent": 27,
-      "packets_accepted": 27,
-      "packets_rejected": 0,
-      "attacks_injected": 0,
-      "attacks_detected": 0,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_168",
-      "packets_sent": 27,
-      "packets_accepted": 25,
-      "packets_rejected": 2,
-      "attacks_injected": 2,
-      "attacks_detected": 2,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_169",
-      "packets_sent": 27,
-      "packets_accepted": 26,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
-      "false_positives": 0
-    },
-    {
-      "meter_id": "SM_170",
-      "packets_sent": 27,
-      "packets_accepted": 26,
-      "packets_rejected": 1,
-      "attacks_injected": 1,
-      "attacks_detected": 1,
+      "meter_id": "SM_100",
+      "packets_sent": 59,
+      "packets_accepted": 50,
+      "packets_rejected": 9,
+      "attacks_injected": 11,
+      "attacks_detected": 9,
       "false_positives": 0
     }
   ],
   "attack_log": [
     {
+      "meter_id": "SM_030",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861789.6854386,
+      "session_id": "b908b3100a9b899b"
+    },
+    {
       "meter_id": "SM_078",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272594.4620092,
-      "session_id": "fdcdbb5bdd8421a4"
-    },
-    {
-      "meter_id": "SM_063",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272594.4630058,
-      "session_id": "9ec8f80f6193cc45"
-    },
-    {
-      "meter_id": "SM_120",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272594.574962,
-      "session_id": "b120b1f7ae333afa"
+      "timestamp": 1788861789.8256452,
+      "session_id": "c9b0a7ee92d8c9b4"
     },
     {
-      "meter_id": "SM_040",
+      "meter_id": "SM_064",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272596.2563686,
-      "session_id": "803b365068897776"
+      "timestamp": 1788861789.8266528,
+      "session_id": "c54241658d020f93"
     },
     {
-      "meter_id": "SM_146",
+      "meter_id": "SM_049",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272596.257317,
-      "session_id": "f22fe3938dee5b57"
+      "timestamp": 1788861790.661686,
+      "session_id": "4a0e10a9dbc918dd"
     },
     {
-      "meter_id": "SM_095",
+      "meter_id": "SM_009",
       "attack_type": "mitm",
       "detection_method": "hmac",
-      "timestamp": 1781272596.2648394,
-      "session_id": "25bd1c8b22a7b5bf"
+      "timestamp": 1788861790.6626885,
+      "session_id": "957cace37c8e24ff"
     },
     {
-      "meter_id": "SM_133",
+      "meter_id": "SM_004",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272596.2648394,
-      "session_id": "eb2734d88ba4461f"
+      "timestamp": 1788861790.6626885,
+      "session_id": "abaabbb12279cdf7"
     },
     {
-      "meter_id": "SM_045",
+      "meter_id": "SM_008",
       "attack_type": "mitm",
       "detection_method": "hmac",
-      "timestamp": 1781272596.265857,
-      "session_id": "cf590100444821c1"
-    },
-    {
-      "meter_id": "SM_118",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272596.535234,
-      "session_id": "1f691d5ca1e41d9a"
-    },
-    {
-      "meter_id": "SM_149",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272597.972555,
-      "session_id": "1762292691fa5315"
-    },
-    {
-      "meter_id": "SM_139",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272597.9795341,
-      "session_id": "06c0f51c87302b74"
+      "timestamp": 1788861790.6636536,
+      "session_id": "865d6dd3eec2fa82"
     },
     {
       "meter_id": "SM_087",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272597.9805357,
-      "session_id": "f0f568af142f41e4"
+      "timestamp": 1788861790.6646912,
+      "session_id": "945562de84e72c1e"
     },
     {
-      "meter_id": "SM_079",
+      "meter_id": "SM_068",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272597.9805357,
-      "session_id": "dfa7d83c2612b8dd"
+      "timestamp": 1788861790.6646912,
+      "session_id": "bae6b66a8e79e48f"
     },
     {
-      "meter_id": "SM_056",
+      "meter_id": "SM_098",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272597.9805357,
-      "session_id": "70494699346df0cb"
+      "timestamp": 1788861791.6711233,
+      "session_id": "c0faed154fb94e2c"
     },
     {
-      "meter_id": "SM_065",
+      "meter_id": "SM_076",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861791.6711233,
+      "session_id": "92a53603ed9fa4d8"
+    },
+    {
+      "meter_id": "SM_043",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272597.9815524,
-      "session_id": "a832412430358fd9"
+      "timestamp": 1788861791.6720855,
+      "session_id": "41704cf30f66c185"
     },
     {
-      "meter_id": "SM_036",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272597.9815524,
-      "session_id": "aa4d33d0d0922ae8"
+      "meter_id": "SM_078",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861791.832139,
+      "session_id": "c9b0a7ee92d8c9b4"
     },
     {
-      "meter_id": "SM_027",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272597.982552,
-      "session_id": "c3f3758f34578621"
-    },
-    {
-      "meter_id": "SM_163",
+      "meter_id": "SM_017",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272599.8517976,
-      "session_id": "0755063b56ed3644"
-    },
-    {
-      "meter_id": "SM_132",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272599.8536875,
-      "session_id": "bfecb7fe9ae5500b"
-    },
-    {
-      "meter_id": "SM_126",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272599.8597772,
-      "session_id": "7a90b888d82b5b8b"
-    },
-    {
-      "meter_id": "SM_168",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272601.589406,
-      "session_id": "d3a4a3567f16c6a1"
+      "timestamp": 1788861792.6932683,
+      "session_id": "ad5d50711dc5bb8c"
     },
     {
       "meter_id": "SM_038",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272601.5903544,
-      "session_id": "a18d780f61b583f0"
-    },
-    {
-      "meter_id": "SM_092",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272601.591319,
-      "session_id": "6a8d790bad9f908a"
+      "timestamp": 1788861792.695298,
+      "session_id": "3815998af3937af4"
     },
     {
-      "meter_id": "SM_112",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272601.5923176,
-      "session_id": "9c1dc99b57f1142d"
-    },
-    {
-      "meter_id": "SM_033",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272603.366647,
-      "session_id": "9d6ba16c258b75ed"
-    },
-    {
-      "meter_id": "SM_125",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272603.3706925,
-      "session_id": "1389cf554f1bee8b"
-    },
-    {
-      "meter_id": "SM_050",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272605.2930865,
-      "session_id": "3390a7166ec35e5a"
-    },
-    {
-      "meter_id": "SM_049",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272605.2950842,
-      "session_id": "4e41117df0ea1e4a"
-    },
-    {
-      "meter_id": "SM_041",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272605.2950842,
-      "session_id": "3a03d50985bb08c5"
-    },
-    {
-      "meter_id": "SM_018",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272605.2950842,
-      "session_id": "8a8bae02fa92111e"
-    },
-    {
-      "meter_id": "SM_066",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272605.2950842,
-      "session_id": "0c5f24a76916d02e"
-    },
-    {
-      "meter_id": "SM_122",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272605.2960837,
-      "session_id": "3b4394c314c18ec3"
-    },
-    {
-      "meter_id": "SM_159",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272605.2960837,
-      "session_id": "2194e867b2be53d9"
-    },
-    {
-      "meter_id": "SM_119",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272605.297085,
-      "session_id": "9d0c754e98f79dc5"
-    },
-    {
-      "meter_id": "SM_051",
+      "meter_id": "SM_057",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272605.4542792,
-      "session_id": "c63cba9aed142958"
+      "timestamp": 1788861792.9458685,
+      "session_id": "c434b502c9a03629"
     },
     {
-      "meter_id": "SM_142",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272607.2951283,
-      "session_id": "32157159602839e8"
-    },
-    {
-      "meter_id": "SM_129",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272607.296139,
-      "session_id": "07d3c8bab74ec162"
-    },
-    {
-      "meter_id": "SM_070",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272607.296139,
-      "session_id": "63772ba54a87d964"
-    },
-    {
-      "meter_id": "SM_045",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272607.2981582,
-      "session_id": "cf590100444821c1"
-    },
-    {
-      "meter_id": "SM_034",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272607.299034,
-      "session_id": "ea270271c5570182"
-    },
-    {
-      "meter_id": "SM_020",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272607.299034,
-      "session_id": "f11a05e6ae785781"
-    },
-    {
-      "meter_id": "SM_062",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272607.299034,
-      "session_id": "101b3b3fd7a81e8a"
-    },
-    {
-      "meter_id": "SM_061",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272607.3001258,
-      "session_id": "bf5b16550de94967"
-    },
-    {
-      "meter_id": "SM_032",
+      "meter_id": "SM_082",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272607.4470248,
-      "session_id": "0fb4525b162e1b63"
+      "timestamp": 1788861792.9478734,
+      "session_id": "b83ef8858043147a"
     },
     {
-      "meter_id": "SM_104",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272608.997785,
-      "session_id": "25786eb12e6f6e79"
+      "meter_id": "SM_053",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861793.582334,
+      "session_id": "2a094aa61087465f"
     },
     {
-      "meter_id": "SM_123",
+      "meter_id": "SM_098",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272609.0007393,
-      "session_id": "c796aca354b2dbb7"
+      "timestamp": 1788861793.583336,
+      "session_id": "c0faed154fb94e2c"
     },
     {
-      "meter_id": "SM_116",
+      "meter_id": "SM_058",
       "attack_type": "mitm",
       "detection_method": "hmac",
-      "timestamp": 1781272609.0007393,
-      "session_id": "f51baa79bfc1fb71"
+      "timestamp": 1788861793.5843413,
+      "session_id": "145450ed80278cd2"
     },
     {
-      "meter_id": "SM_111",
+      "meter_id": "SM_077",
       "attack_type": "mitm",
       "detection_method": "hmac",
-      "timestamp": 1781272609.0007393,
-      "session_id": "96da53a28ccd9635"
-    },
-    {
-      "meter_id": "SM_121",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272610.691588,
-      "session_id": "bfa5e276e96e61a4"
-    },
-    {
-      "meter_id": "SM_010",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272610.6925805,
-      "session_id": "08d97ea48b6b56d6"
-    },
-    {
-      "meter_id": "SM_130",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272610.6935759,
-      "session_id": "687171b0fb0cb668"
-    },
-    {
-      "meter_id": "SM_008",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272610.6935759,
-      "session_id": "ce3c6f639a029052"
-    },
-    {
-      "meter_id": "SM_014",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272610.6955967,
-      "session_id": "c8073303479e5195"
-    },
-    {
-      "meter_id": "SM_020",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272610.6955967,
-      "session_id": "f11a05e6ae785781"
+      "timestamp": 1788861794.7253013,
+      "session_id": "17b787aed0bd7698"
     },
     {
       "meter_id": "SM_086",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272610.6965957,
-      "session_id": "104e7086e0579f3c"
+      "timestamp": 1788861794.726249,
+      "session_id": "a93a02a57d29be74"
     },
     {
-      "meter_id": "SM_134",
+      "meter_id": "SM_068",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272610.6965957,
-      "session_id": "24d97a0075798f5b"
+      "timestamp": 1788861794.726249,
+      "session_id": "bae6b66a8e79e48f"
     },
     {
-      "meter_id": "SM_067",
+      "meter_id": "SM_083",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272610.9789443,
-      "session_id": "9ea8fe70e3c7554b"
+      "timestamp": 1788861794.9163604,
+      "session_id": "64e838364ed55fd9"
     },
     {
-      "meter_id": "SM_018",
+      "meter_id": "SM_059",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272612.4087913,
-      "session_id": "8a8bae02fa92111e"
+      "timestamp": 1788861795.6241775,
+      "session_id": "a64012e277d504b1"
     },
     {
-      "meter_id": "SM_149",
+      "meter_id": "SM_053",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272612.4087913,
-      "session_id": "1762292691fa5315"
+      "timestamp": 1788861795.6241775,
+      "session_id": "2a094aa61087465f"
     },
     {
-      "meter_id": "SM_079",
+      "meter_id": "SM_020",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272612.41079,
-      "session_id": "dfa7d83c2612b8dd"
+      "timestamp": 1788861795.6251507,
+      "session_id": "d01127f2f63fdc2e"
     },
     {
-      "meter_id": "SM_060",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272612.41079,
-      "session_id": "d6b167e997224579"
-    },
-    {
-      "meter_id": "SM_137",
+      "meter_id": "SM_071",
       "attack_type": "mitm",
       "detection_method": "hmac",
-      "timestamp": 1781272612.4118164,
-      "session_id": "097c2c41a51f7326"
+      "timestamp": 1788861795.6251507,
+      "session_id": "0c3948531f24cc2d"
+    },
+    {
+      "meter_id": "SM_070",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861795.626103,
+      "session_id": "ff99769829a950d1"
+    },
+    {
+      "meter_id": "SM_029",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861796.7591538,
+      "session_id": "187133f5d2fcc134"
     },
     {
       "meter_id": "SM_019",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861796.7601485,
+      "session_id": "edd16398b8beeb39"
+    },
+    {
+      "meter_id": "SM_070",
       "attack_type": "mitm",
       "detection_method": "hmac",
-      "timestamp": 1781272612.4118164,
-      "session_id": "edd4c3e0fa3d0f78"
+      "timestamp": 1788861797.7056053,
+      "session_id": "ff99769829a950d1"
     },
     {
-      "meter_id": "SM_057",
+      "meter_id": "SM_013",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272612.4128184,
-      "session_id": "655441f8b327ef94"
+      "timestamp": 1788861797.706606,
+      "session_id": "e3b6154cfeca6b60"
     },
     {
-      "meter_id": "SM_037",
+      "meter_id": "SM_022",
       "attack_type": "replay",
       "detection_method": "sequence",
-      "timestamp": 1781272612.4128184,
-      "session_id": "88ff2b24029c9d83"
-    },
-    {
-      "meter_id": "SM_131",
-      "attack_type": "mitm",
-      "detection_method": "hmac",
-      "timestamp": 1781272614.1888983,
-      "session_id": "f8f9603e9c8f9f7e"
-    },
-    {
-      "meter_id": "SM_014",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272614.1888983,
-      "session_id": "c8073303479e5195"
-    },
-    {
-      "meter_id": "SM_154",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272614.19161,
-      "session_id": "5dc48b811369dd34"
-    },
-    {
-      "meter_id": "SM_118",
-      "attack_type": "replay",
-      "detection_method": "sequence",
-      "timestamp": 1781272614.1926181,
-      "session_id": "1f691d5ca1e41d9a"
-    },
-    {
-      "meter_id": "SM_148",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272614.362437,
-      "session_id": "0eb044dbb10cb776"
-    },
-    {
-      "meter_id": "SM_090",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272614.472043,
-      "session_id": "06bce4a048ea5e8e"
-    },
-    {
-      "meter_id": "SM_099",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272614.472043,
-      "session_id": "86a4f93429896820"
-    },
-    {
-      "meter_id": "SM_141",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272614.7068317,
-      "session_id": "aee5233748408117"
-    },
-    {
-      "meter_id": "SM_055",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272615.4670053,
-      "session_id": "714afa9bf9fc41d4"
-    },
-    {
-      "meter_id": "SM_009",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272616.0115108,
-      "session_id": "b03b057914d83ed4"
-    },
-    {
-      "meter_id": "SM_144",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272616.3655531,
-      "session_id": "b84bd35926511ed7"
-    },
-    {
-      "meter_id": "SM_166",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272617.420591,
-      "session_id": "996849647a13c748"
-    },
-    {
-      "meter_id": "SM_151",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272617.541315,
-      "session_id": "c1e313eba978a53c"
-    },
-    {
-      "meter_id": "SM_097",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272617.6994576,
-      "session_id": "fb416ffa86b08727"
-    },
-    {
-      "meter_id": "SM_102",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272618.3976388,
-      "session_id": "fd11534c72fa3a2b"
-    },
-    {
-      "meter_id": "SM_058",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272618.6688752,
-      "session_id": "eade4c95a71a9e94"
-    },
-    {
-      "meter_id": "SM_073",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272618.7424128,
-      "session_id": "46813fe75cea9350"
-    },
-    {
-      "meter_id": "SM_093",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272618.7784903,
-      "session_id": "5e2c83b07a1a5549"
-    },
-    {
-      "meter_id": "SM_003",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272618.7796073,
-      "session_id": "bed40846cd6e956a"
-    },
-    {
-      "meter_id": "SM_063",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272618.83349,
-      "session_id": "9ec8f80f6193cc45"
-    },
-    {
-      "meter_id": "SM_036",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272618.83349,
-      "session_id": "aa4d33d0d0922ae8"
-    },
-    {
-      "meter_id": "SM_046",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272618.920597,
-      "session_id": "0745d9a5f5949aea"
+      "timestamp": 1788861797.706606,
+      "session_id": "c86d2c646163edf4"
     },
     {
       "meter_id": "SM_056",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272619.057707,
-      "session_id": "70494699346df0cb"
+      "timestamp": 1788861797.8446057,
+      "session_id": "01858eeb6fc2d004"
     },
     {
-      "meter_id": "SM_085",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272619.3493226,
-      "session_id": "a437fed71fa97118"
+      "meter_id": "SM_078",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861797.8446057,
+      "session_id": "c9b0a7ee92d8c9b4"
     },
     {
-      "meter_id": "SM_088",
+      "meter_id": "SM_050",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861798.8332672,
+      "session_id": "c04301eb800ef197"
+    },
+    {
+      "meter_id": "SM_017",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861798.8332672,
+      "session_id": "ad5d50711dc5bb8c"
+    },
+    {
+      "meter_id": "SM_055",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861798.8342707,
+      "session_id": "555d3b5afb62fd2c"
+    },
+    {
+      "meter_id": "SM_002",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861799.7975698,
+      "session_id": "dfc0510ae5d6383e"
+    },
+    {
+      "meter_id": "SM_062",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861799.799574,
+      "session_id": "7eeda2d2d9aa9f97"
+    },
+    {
+      "meter_id": "SM_048",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861799.799574,
+      "session_id": "f842513cb25f60a5"
+    },
+    {
+      "meter_id": "SM_064",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861799.799574,
+      "session_id": "c54241658d020f93"
+    },
+    {
+      "meter_id": "SM_031",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272619.479762,
-      "session_id": "852de97aca8461c5"
+      "timestamp": 1788861800.8740904,
+      "session_id": "554ad4cd50e583c6"
+    },
+    {
+      "meter_id": "SM_006",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861800.8751051,
+      "session_id": "858db15a0f28818a"
+    },
+    {
+      "meter_id": "SM_052",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861800.8751051,
+      "session_id": "c4161c16c86259d0"
+    },
+    {
+      "meter_id": "SM_005",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861800.988671,
+      "session_id": "526c082174231999"
+    },
+    {
+      "meter_id": "SM_059",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861801.846288,
+      "session_id": "a64012e277d504b1"
+    },
+    {
+      "meter_id": "SM_074",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861801.8472872,
+      "session_id": "5213a28fc5d64b81"
+    },
+    {
+      "meter_id": "SM_100",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861802.9135587,
+      "session_id": "32c53200cec425d1"
+    },
+    {
+      "meter_id": "SM_062",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861803.9184206,
+      "session_id": "7eeda2d2d9aa9f97"
+    },
+    {
+      "meter_id": "SM_078",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861803.9194272,
+      "session_id": "c9b0a7ee92d8c9b4"
+    },
+    {
+      "meter_id": "SM_024",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861803.9194272,
+      "session_id": "0ed590f71ad2bfa5"
     },
     {
       "meter_id": "SM_043",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272619.614145,
-      "session_id": "3832c1c960681e80"
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861803.9204254,
+      "session_id": "41704cf30f66c185"
     },
     {
-      "meter_id": "SM_124",
+      "meter_id": "SM_081",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272619.6520348,
-      "session_id": "c85538e17a9d326a"
+      "timestamp": 1788861804.0128732,
+      "session_id": "35e8fcdbd979ec9e"
     },
     {
-      "meter_id": "SM_021",
+      "meter_id": "SM_035",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272619.7603016,
-      "session_id": "a099988b431420df"
+      "timestamp": 1788861804.9258134,
+      "session_id": "9b59817c653b9849"
     },
     {
-      "meter_id": "SM_164",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272619.8500187,
-      "session_id": "f5d9a99bf464bd52"
+      "meter_id": "SM_068",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861804.9258134,
+      "session_id": "bae6b66a8e79e48f"
     },
     {
-      "meter_id": "SM_117",
+      "meter_id": "SM_083",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861804.9258134,
+      "session_id": "64e838364ed55fd9"
+    },
+    {
+      "meter_id": "SM_017",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861804.9278202,
+      "session_id": "ad5d50711dc5bb8c"
+    },
+    {
+      "meter_id": "SM_059",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861805.888516,
+      "session_id": "a64012e277d504b1"
+    },
+    {
+      "meter_id": "SM_089",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861805.888516,
+      "session_id": "91d49311c1116b0d"
+    },
+    {
+      "meter_id": "SM_030",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861805.8915155,
+      "session_id": "b908b3100a9b899b"
+    },
+    {
+      "meter_id": "SM_086",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861806.9584188,
+      "session_id": "a93a02a57d29be74"
+    },
+    {
+      "meter_id": "SM_092",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861806.9594193,
+      "session_id": "d752120cb0bb7bb9"
+    },
+    {
+      "meter_id": "SM_032",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861806.9605007,
+      "session_id": "945fd60378b4c072"
+    },
+    {
+      "meter_id": "SM_066",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272619.9560406,
-      "session_id": "cebe6576a447082c"
+      "timestamp": 1788861807.9376788,
+      "session_id": "54678ab5aa582ac6"
     },
     {
       "meter_id": "SM_098",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861807.9386787,
+      "session_id": "c0faed154fb94e2c"
+    },
+    {
+      "meter_id": "SM_024",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861807.9386787,
+      "session_id": "0ed590f71ad2bfa5"
+    },
+    {
+      "meter_id": "SM_027",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861807.9386787,
+      "session_id": "7a3747dd4481523b"
+    },
+    {
+      "meter_id": "SM_078",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861807.9396799,
+      "session_id": "c9b0a7ee92d8c9b4"
+    },
+    {
+      "meter_id": "SM_081",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861808.0286424,
+      "session_id": "35e8fcdbd979ec9e"
+    },
+    {
+      "meter_id": "SM_014",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272620.107174,
-      "session_id": "db2d9458711fef2f"
+      "timestamp": 1788861808.165063,
+      "session_id": "23ff5b0deb882222"
+    },
+    {
+      "meter_id": "SM_060",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861808.9857514,
+      "session_id": "fc4157db11c37f2c"
+    },
+    {
+      "meter_id": "SM_061",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861808.9867864,
+      "session_id": "d3aab0a6fb89a2d4"
+    },
+    {
+      "meter_id": "SM_069",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861808.9867864,
+      "session_id": "0ee039d24c9f671c"
+    },
+    {
+      "meter_id": "SM_028",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861808.9867864,
+      "session_id": "189146af8e25bb80"
+    },
+    {
+      "meter_id": "SM_095",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861809.0622635,
+      "session_id": "7e66cfda65ba95ab"
+    },
+    {
+      "meter_id": "SM_094",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861809.0622635,
+      "session_id": "49fb7e952f74ccd6"
+    },
+    {
+      "meter_id": "SM_039",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861809.9972358,
+      "session_id": "dbbb56988e47508a"
+    },
+    {
+      "meter_id": "SM_034",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861809.9982357,
+      "session_id": "e47074a6d1978bda"
+    },
+    {
+      "meter_id": "SM_013",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861809.9992356,
+      "session_id": "e3b6154cfeca6b60"
+    },
+    {
+      "meter_id": "SM_079",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861810.2192178,
+      "session_id": "a15d1e0437a76422"
+    },
+    {
+      "meter_id": "SM_009",
+      "attack_type": "replay",
+      "detection_method": "sequence",
+      "timestamp": 1788861810.9783204,
+      "session_id": "957cace37c8e24ff"
+    },
+    {
+      "meter_id": "SM_047",
+      "attack_type": "mitm",
+      "detection_method": "hmac",
+      "timestamp": 1788861810.9783204,
+      "session_id": "34f79ed7473dde44"
+    },
+    {
+      "meter_id": "SM_037",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861811.2394605,
+      "session_id": "e252ce0e643ac714"
+    },
+    {
+      "meter_id": "SM_003",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861811.2750444,
+      "session_id": "bacc5e56f49370db"
+    },
+    {
+      "meter_id": "SM_044",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861811.996114,
+      "session_id": "79f4b76b118ba1eb"
+    },
+    {
+      "meter_id": "SM_090",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861812.2178226,
+      "session_id": "d63515cfa71a3450"
+    },
+    {
+      "meter_id": "SM_033",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861812.2373502,
+      "session_id": "9e7b45c7cd95b3c9"
+    },
+    {
+      "meter_id": "SM_012",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861812.3423831,
+      "session_id": "a9b004340fa8b801"
+    },
+    {
+      "meter_id": "SM_087",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861812.4165533,
+      "session_id": "945562de84e72c1e"
+    },
+    {
+      "meter_id": "SM_015",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861812.893972,
+      "session_id": "f8b8c13533a483ae"
+    },
+    {
+      "meter_id": "SM_005",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861813.0402815,
+      "session_id": "526c082174231999"
+    },
+    {
+      "meter_id": "SM_019",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861813.2193725,
+      "session_id": "edd16398b8beeb39"
+    },
+    {
+      "meter_id": "SM_045",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861813.3269968,
+      "session_id": "41df4c5c8cdeee4c"
+    },
+    {
+      "meter_id": "SM_097",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861813.4149857,
+      "session_id": "994dcb8c3c408b30"
+    },
+    {
+      "meter_id": "SM_062",
+      "attack_type": "flood",
+      "detection_method": "rate_analysis",
+      "timestamp": 1788861813.6217732,
+      "session_id": "7eeda2d2d9aa9f97"
     },
     {
       "meter_id": "SM_072",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272620.1997075,
-      "session_id": "9c3f2b4b7e1c4865"
+      "timestamp": 1788861813.6539543,
+      "session_id": "6a43c93bdadfbefa"
     },
     {
-      "meter_id": "SM_147",
+      "meter_id": "SM_084",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272620.2006042,
-      "session_id": "f731fe6e3aff0a64"
+      "timestamp": 1788861813.825637,
+      "session_id": "9f4b3cd4952d21dd"
     },
     {
-      "meter_id": "SM_004",
+      "meter_id": "SM_068",
       "attack_type": "flood",
       "detection_method": "rate_analysis",
-      "timestamp": 1781272620.2207174,
-      "session_id": "a12d44670ff0a1dd"
-    },
-    {
-      "meter_id": "SM_101",
-      "attack_type": "flood",
-      "detection_method": "rate_analysis",
-      "timestamp": 1781272620.3421283,
-      "session_id": "88d780ece0f2edaf"
+      "timestamp": 1788861813.9532123,
+      "session_id": "bae6b66a8e79e48f"
     }
   ],
   "verdict": {
     "status": "PASS",
-    "detection_accuracy": 98.44,
-    "fpr": 0.02,
-    "precision": 99.69,
-    "recall": 81.52
+    "detection_accuracy": 98.09,
+    "fpr": 0.0,
+    "precision": 100.0,
+    "recall": 79.73
   }
 }
